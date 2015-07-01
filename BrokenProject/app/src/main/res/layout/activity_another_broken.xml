@@ -8,7 +8,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="mmbuw.com.brokenproject.AnotherBrokenActivity">
 
-    <TextView
+    <!--TextView
         android:id="@+id/brokenTextView"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -22,6 +22,32 @@
         android:layout_centerVertical="true"
         android:text="\n This view doesn't do anything really."
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" /-->
+
+    <EditText
+        android:id="@+id/url2txt"
+        android:hint="enter your url here"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/urlfetch"
+        android:layout_below="@+id/url2txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="click aftrer entering url"
+        android:onClick="fetchHTML"
+        />
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@+id/urlfetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        />
+
 
 </RelativeLayout>
